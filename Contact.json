@@ -1,0 +1,35 @@
+var args = {};
+	args.lead = {['_className']: "Lead",
+				   ['addressList']:
+				   		[['city']:"",
+				   		['postalCode']:"",
+				   		['state']:"",
+				   		['street1']:"",
+				   		['street2']:""],
+				   	['category']:category,
+				   	['isCustomer']:0,
+				   	['name']: name,
+					['source']:"Chrome Extension",
+					['status']: status,
+					['tags']:tags},
+					['type']: "Person",
+	args.contact = [{['_className']: "Contact",['emails']:[['email']:email],['numbers']:[['number']:number]}];
+
+{"args": [
+
+[{
+   "_className" : "Contact",
+   "emails" :     [
+       {
+           "email" : "Hotmail@hot.com"
+       }
+     ],
+   "numbers" :     [
+               {
+           "number" : "+658767222"
+       }
+   ]
+}]
+]}
+
+{"lead":{"_className":"Lead","addressList":{"city":"","postalCode":"","state":"","street1":"","street2":""},"category":"Warm","isCustomer":0,"name":"abcdefg","source":"Chrome Extension","status":"Potential","tags":"tag1,tag2","type":"Person"},"contact":[{"_className":"Contact","emails":{"email":"tynlong@pearcomms.com"},"numbers":{"number":"+6597500119"}}]}

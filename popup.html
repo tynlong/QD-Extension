@@ -1,0 +1,219 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/1_vendors-569efec3.css">
+  <link rel="stylesheet" href="css/2_app-0b1ecf97.css">
+  	
+</head>
+
+<body>
+<script src='contactform.js'>
+</script>
+<div id="loginpage" class="cc-container" style="box-sizing:border-box;display:block;font-size:120%;border-radius:4px;background:#f9f9f9;box-shadow:0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);border:1px #ccc solid;max-width:20em;min-width:15em;padding:2em 1.5em;text-align:center;margin:0 auto;" data-reactid=".0.0">
+	<form id="loginsubmit" method="post" >
+	<div class="cc-header" style="box-sizing:border-box;color:#218e95;display:block;font-weight:600;font-size:120%;" data-reactid=".0.0.0">
+		<table class="c-layouts--table">
+		<tr class="c-layouts--table-row">
+		<td class="c-layouts--table-row-child" align="center" style="border:0;padding:2em;width:50%;">
+		<img src="loginlogo.png" width="120" height="72">
+		</td>
+		</tr>
+		<tr class="c-layouts--table-row">
+		<td align="center" class="cc-textview" style="display:block;margin:-30px 0 2em;font-weight:600;color:#1E7B81;font-size:24" data-reactid=".0.0.0.1">
+				QuickDesk
+		</td>
+		</tr>
+		</table>
+	</div>
+	<div class="form-group" data-reactid=".0.0.3"><input placeholder="Email Address" id="emaillogin" type="text" class="form-control" data-reactid=".0.0.3.1:$input">
+	</div>
+	<div class="form-group" data-reactid=".0.0.4"><input placeholder="Password" id="password" type="password" class="form-control" data-reactid=".0.0.4.1:$input">
+	</div><input type="submit" class="btn-block btn btn-primary" value="Login" data-reactid=".0.0.5">
+	</form>
+</div>
+
+
+<div id="addleadpage" class="c-layouts--flow c-layouts--linear" style="box-sizing:border-box;display:none;flex-direction:column;flex-wrap:nowrap;width:504px;height:400px;position:relative;justify-content:flex-start;">
+	<div class="c-layouts-child" style="align-self:auto;box-sizing:border-box;flex:initial;order:1;position:relative;">
+		<div class="cc-actionbar" style="box-sizing:border-box;padding:1em;">
+			<div id="title" class="cc-header theme-size--l" style="box-sizing:border-box;display:block;font-weight:600;">
+				<span>
+				Add </span>
+				<span>
+				Person</span>
+			</div>
+		</div>
+	</div>
+	<div class="c-layouts-child" style="align-self:auto;box-sizing:border-box;flex:1;order:1;position:relative;padding:0.5em;min-height:0;overflow:auto;">
+		<form id="all" method="post">
+		<div class="c-layouts--flow c-layouts--linear" style="box-sizing:border-box;display:flex;flex-direction:column;flex-wrap:nowrap;height:100%;position:relative;justify-content:flex-start;">
+			<div class="c-layouts-child" style="align-self:auto;box-sizing:border-box;flex:initial;order:1;position:relative;padding:1em;">
+				<table class="c-layouts--table" style="text-align:initial;width:100%;" >
+					<tbody>
+						<tr class="c-layouts--table-row">
+							<td class="c-layouts--table-row-child" style="border:0;padding:1em;" >
+								<div class="cc-header" style="box-sizing:border-box;display:block;font-weight:600;" >
+								Lead Information</div>
+							</td>
+						</tr>
+						<tr class="c-layouts--table-row">
+							<td class="c-layouts--table-row-child" style="border:0;padding:1em;">
+								<div class="form-group">
+									<input type="text" placeholder="Lead Name" value="" name="name" id="name"/>
+								</div>
+							</td>
+						</tr>
+						<tr class="c-layouts--table-row" >
+							<td class="c-layouts--table-row-child" style="border:0;padding:1em;width:50%;">
+								<div class="form-group">
+									<select id="status" type="select" placeholder="Status" class="form-control">
+										<option value="New" >
+											New
+										</option>
+										<option value="Approached">
+											Approached
+										</option>
+										<option value="Potential">
+											Potential
+										</option>
+										<option value="Won">
+											Won
+										</option>
+										<option value="Lost">
+											Lost
+										</option>
+										<option value="Not Now">
+											Not Now
+										</option>
+									</select>
+								</div>
+							</td>
+							<td class="c-layouts--table-row-child" colspan="1" style="border:0;padding:1em;width:50%;" data-reactid=".3.1.0.0.$1.0.$0.0.1.$=12:0.$1">
+								<div class="form-group" data-reactid=".3.1.0.0.$1.0.$0.0.1.$=12:0.$1.0">
+									<select id="category" type="select" placeholder="Category">
+										<option value="Hot">
+											Hot
+										</option>
+										<option value="Warm">
+											Warm
+										</option>
+										<option value="Cold">
+											Cold
+										</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr class="c-layouts--table-row">
+							<td class="c-layouts--table-row-child" colspan="2" style="border:0;padding:1em;">
+								<div class="cc-datainput" style="width:100%;">
+									<div class="dt dt--inedit dt--empty dt--lib dt--csv">
+										<div class="dt-content dt-content--editing">
+											<input id="tags" type="text" value="" class="data-edit data-edit--csv" placeholder="Tags (tag1, tag2, etc)">
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="c-layouts-child" style="height:100px;align-self:auto;box-sizing:border-box;flex:initial;order:1;position:relative;padding:0.5em;" >
+				<div class="cc-container" style="box-sizing:border-box;">
+					<div class="cc-header" style="box-sizing:border-box;margin:0 1em;display:block;font-weight:600;">
+						Contact Info
+						</div>
+						<div class="c-layouts--flow c-layouts--linear" style="box-sizing:border-box;display:flex;flex-direction:row;flex-wrap:nowrap;height:100%;position:relative;justify-content:flex-start;">
+							<div class="c-layouts-child" style="align-self:auto;box-sizing:border-box;flex:initial;order:1;position:relative;padding:10px;">
+								<noscript>
+								</noscript>
+							</div>
+							<div class="c-layouts-child" style="align-self:auto;box-sizing:border-box;flex:1;order:1;position:relative;padding:10px;">
+								<div class="cc-container" style="box-sizing:border-box;" >
+									<table class="c-layouts--table" style="text-align:initial;width:100%;" >
+										<tbody >
+											<tr class="c-layouts--table-row" >
+												<td class="c-layouts--table-row-child" style="border:0;padding:0 5px;" >
+													<div class="cc-datainput" style="width:100%;">
+														<div class="dt dt--inedit dt--empty dt--lib dt-addons--phonewithcountry">
+															<div class="dt-content dt-content--editing" >
+																<div class="dt dt--static dt--lib dt--dropdown cc-countries-prefixselector cc-countries-prefixselector--hidenumber f16" >
+																	<div class="dt-content">
+																		<div class="data-value data-value--static">
+																			<div class="cc-countries-prefixselector-name">
+																				<i class="flag sg">
+																					</i>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<input type="text" id="number" name="number"  class="data-edit data-edit--phonewithcountry" value="+65" placeholder="Phone Number (+65)" />
+															</div>
+														</div>
+													</div>
+												</td>
+												<td class="c-layouts--table-row-child" style="border:0;padding:0 5px;" >
+													<div class="cc-datainput" style="width:100%;">
+														<div class="dt dt--inedit dt--empty dt--lib dt--email">
+															<div class="dt-content dt-content--editing">
+																<input type="email" id='email' class="data-edit data-edit--email" name="email" value="" placeholder="Email"/ >
+															</div>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="c-layouts-child" style="align-self:auto;box-sizing:border-box;flex:initial;order:1;position:relative;padding:10px;">
+								<noscript >
+								</noscript>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="c-layouts-child" style="align-self:auto;box-sizing:border-box;flex:initial;order:1;height:10px;position:relative;padding:0.5em;" >
+					<noscript >
+					</noscript>
+				</div>
+				<div class="c-layouts-child" style="align-self:auto;box-sizing:border-box;flex:initial;order:1;position:relative;padding:0.5em;width:100%;" >
+					<div class="cc-divider cc-divider--default" style="opacity:1;height:1px;width:100%;" >
+					</div>
+				</div>
+				<div class="c-layouts-child" style="align-self:auto;box-sizing:border-box;flex:initial;order:1;position:relative;padding:0.5em;" >
+					<div class="c-layouts--flow c-layouts--linear" style="box-sizing:border-box;display:flex;flex-direction:row;flex-wrap:nowrap;height:20px;position:relative;justify-content:flex-start;align-items:center;">
+						<div class="c-layouts-child" style="align-self:auto;box-sizing:border-box;flex:initial;order:1;position:relative;width:300px" >
+						</div>
+						<input id="cancel" type="reset" class="btn btn-default-flat" value="Cancel" style="box-sizing:border-box;display:block;font-weight:200;">
+						<div class="c-layouts-child" style="align-self:auto;box-sizing:border-box;flex:initial;order:1;position:relative;" >
+							<input id="submit" type="submit" class="btn btn-primary-flat" value="Save" style="box-sizing:border-box;display:block;font-weight:200;">
+						</div>                                                                                                                                     
+						</form>
+						</div>
+					<div class="c-layouts-child" style="align-self:auto;box-sizing:border-box;flex:initial;order:1;position:center;" >
+						<form id="logoutform"> 
+						<input id="logout" type="submit" value="Logout" class="btn btn-primary-flat" style="color:red;box-sizing:border-box;display:block;font-weight:200;">
+						<input id="key" style="display:none" type="text" value="0">
+						</form>
+						</div>
+						
+					</div>
+					</div>				
+			
+			
+	
+		</div>
+	</div>
+<div id="savingpage" style="box-sizing:border-box;display:none;flex-direction:column;flex-wrap:nowrap;width:504px;height:400px;position:relative;justify-content:flex-start;">
+		<div class="cc-header" style="box-sizing:border-box;color:#218e95;display:flex;font-weight:600;font-size:120%;" data-reactid=".0.0.0">
+		<table class="c-layouts--table">
+		<tr class="c-layouts--table-row">
+		<p id= "saving" align="center" class="cc-textview" style="display:block;margin:245 3em;font-weight:600;color:#1E7B81;font-size:48" data-reactid=".0.0.0.1">
+		Saving...
+		</p>
+		</tr>
+		</table>
+	</div>
+</div>
+
+</body>
